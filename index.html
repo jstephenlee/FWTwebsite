@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Fine With This</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+    <link rel="Stylesheet" href="style.css" type="text/css" media="all" />
+    <!--Link to jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link to jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <h3>Fine With This</h3>
+        <nav><a href="#about">About</a>
+            <a href="#twitch-embed">Live Stream</a>
+            <a href="#research">Research</a>
+        </nav>
+    </header>
+    <div class="container">
+
+
+        <section id="about">
+            <h1>Fine With This</h1>
+
+
+        </section>
+
+        <section>
+            <div id="twitch-embed"></div>
+
+            <!-- Load the Twitch embed script -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+            <script type="text/javascript">
+                new Twitch.Embed("twitch-embed", {
+                    width: 854,
+                    height: 480,
+                    channel: "fine_with_this",
+                    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+                    //        parent: ["embed.example.com", "othersite.example.com"]
+                });
+
+            </script>
+
+        </section>
+        <section id="research">
+            <h2>Research</h2>
+        </section>
+
+
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+
+
+
+</body>
+
+</html>
