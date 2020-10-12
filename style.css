@@ -142,12 +142,10 @@ table {
     --secondary-color: #bbd57d;
     --type: "Open Sans, sans-serif;
 
-
-
 }
 
 body {
-    font-family:  'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--main-color);
     box-sizing: border-box;
     background-color: #888;
@@ -160,28 +158,27 @@ h3,
 h4,
 h5,
 h6 {
-    font:'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-
+     font-weight: 700;
+    font: 'Open Sans Condensed', sans-serif;
+   
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 5em;
     text-decoration: underline;
+    line-height: 1.25em;
 
 
 }
 
 h2 {
     font-size: 2em;
-      text-decoration: underline;
-
-
+    text-decoration: underline;
 }
+
 h3 {
     flex: 1;
     font-size: 1.5em;
-
 }
 
 header {
@@ -208,7 +205,7 @@ nav a {
     margin: 0 25px;
     color: #222;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 nav a:hover {
@@ -216,8 +213,11 @@ nav a:hover {
 
 }
 
+p {
+    line-height: 1.5em;
+}
 .container {
-    box-shadow: 10px 15px 15px grey;
+    box-shadow: 5px 5px 20px rgba(60, 60, 60, 20);
 
     margin: 50px auto;
     width: 854px;
@@ -243,6 +243,7 @@ section {
 .wide img {
     width: 100%;
 }
+
 #about {
     height: 70vh;
 
@@ -257,6 +258,7 @@ section {
 
     height: 100vh;
     background: white;
+    display: block;
 }
 
 .white {
@@ -266,14 +268,18 @@ section {
 
 .left {
     flex: 1;
-
 }
 
 .right {
     flex: 1;
-
 }
 
 .right img {
     width: 100%;
+}
+
+footer {
+    background: var(--main-color);
+    height: 20vh;
+    
 }
