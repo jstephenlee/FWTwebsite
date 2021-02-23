@@ -1,82 +1,155 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <title>Fine With This</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--<link rel="shortcut icon" href="favicon.ico" />-->
-    <link rel="Stylesheet" href="style.css" type="text/css" media="all" />
-    <!--Link to jQuery-->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Fine With This</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  
+     
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+   <link rel="stylesheet" href="css/style.css">
+
+
+ <!--Link to jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Link to jQuery UI-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
 
 </head>
 
 
+
+
+
+
 <body>
-    <header>
-        <h3>FINE WITH THIS</h3>
-        <nav><a href="#about">About</a>
-            <a href="#twitch-embed">Live Stream</a>
-            <a href="#research">Research</a>
-        </nav>
-    </header>
     <div class="container">
-    <div class="wide">
-<img src="img/3DPrint.jpeg">
-        </div>
-
-        <section id="about">
-           <div class="left white">
-            <h1>Fine With This</h1>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque odit distinctio aliquid maiores totam, vel voluptas facere obcaecati asperiores! Molestias libero, illum. Asperiores quisquam fugiat deleniti optio, atque iusto, totam.</p>
-            </div>
-            <div class="right">
-            <img src="img/FineRhino.jpeg" alt="fine">
-            </div>
-           
-
-
-        </section>
-         <section>
-            <a href="#">Link</a>
-            </section>
-
-        <section>
-            <div id="twitch-embed"></div>
-
-            <!-- Load the Twitch embed script -->
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-            <script type="text/javascript">
-                new Twitch.Embed("twitch-embed", {
-                    width: 854,
-                    height: 480,
-                    channel: "fine_with_this",
-                    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-                    //        parent: ["embed.example.com", "othersite.example.com"]
-                });
-
-            </script>
-
-        </section>
-        <section id="research">
-            <h2>RESEARCH</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit numquam voluptate itaque, quibusdam! Rerum eos vero, recusandae, officiis, nihil voluptate perspiciatis eum obcaecati mollitia in cupiditate, rem consequuntur cum fugit.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quo sint tempora, tempore saepe eligendi cumque quasi architecto tenetur necessitatibus id optio odio, magnam unde laboriosam modi recusandae repellendus culpa.</p>
-        </section>
-
-
-        <footer>
-
-        </footer>
+    <header>
+           <h1>FINE WITH THIS</h1>
+           <nav><a href="#about">About</a>
+               <a href="#twitch-embed">Live Stream</a>
+               <a href="#research">Research</a>
+           </nav>
+       </header>
+      <img src="img/3DPrint.jpeg" class="u-max-full-width">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
     </div>
+    <div id="twitch-embed" class="u-max-full-width"> <h2>LIVE STREAM</h2></div>
+    
+   
+<!--               Load the Twitch embed script-->
+               <script src="https://embed.twitch.tv/embed/v1.js"></script>
+   
+<!--               Create a Twitch.Embed object that will render within the "twitch-embed" root element.-->
+               <script type="text/javascript">
+                   new Twitch.Embed("twitch-embed", {
+                       width: 854,
+                       height: 480,
+                       channel: "fine_with_this",
+                       // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+                       //        parent: ["embed.example.com", "othersite.example.com"]
+                   });
+   
+               </script>
+                 <section id="research">
+               <h2>RESEARCH</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit numquam voluptate itaque, quibusdam! Rerum eos vero, recusandae, officiis, nihil voluptate perspiciatis eum obcaecati mollitia in cupiditate, rem consequuntur cum fugit.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quo sint tempora, tempore saepe eligendi cumque quasi architecto tenetur necessitatibus id optio odio, magnam unde laboriosam modi recusandae repellendus culpa.</p>
+               <a class="button button-primary" href="#">GitHub</a>
+           </section>
+               <footer>
+   <a href="https://www.instagram.com/fine_with_this/"><img src="img/Instagram.png"></a> 
+                   <a href="https://www.twitter.com/fine_with_this"> <img src="img/Twitter.png"></a>
+           </footer>
+  </div>
+   
+   <!-- 
+       <header>
+           <h3>FINE WITH THIS</h3>
+           <nav><a href="#about">About</a>
+               <a href="#twitch-embed">Live Stream</a>
+               <a href="#research">Research</a>
+           </nav>
+       </header>
+       <div class="container">
+       <div class="wide">
+   <img src="img/3DPrint.jpeg">
+           </div>
+   
+           <section id="about">
+              <div class="left white">
+               <h1>Fine With This</h1>
+               <br>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque odit distinctio aliquid maiores totam, vel voluptas facere obcaecati asperiores! Molestias libero, illum. Asperiores quisquam fugiat deleniti optio, atque iusto, totam.</p>
+               </div>
+               <div class="right">
+               <img src="img/FineRhino.jpeg" alt="fine">
+               </div>
+              
+   
+   
+           </section>
+            <section>
+               <a href="#">Link</a>
+               </section>
+   
+           <section>
+               <div id="twitch-embed"></div>
+   
+               Load the Twitch embed script
+               <script src="https://embed.twitch.tv/embed/v1.js"></script>
+   
+               Create a Twitch.Embed object that will render within the "twitch-embed" root element.
+               <script type="text/javascript">
+                   new Twitch.Embed("twitch-embed", {
+                       width: 854,
+                       height: 480,
+                       channel: "fine_with_this",
+                       // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+                       //        parent: ["embed.example.com", "othersite.example.com"]
+                   });
+   
+               </script>
+   
+           </section>
+           <section id="research">
+               <h2>RESEARCH</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit numquam voluptate itaque, quibusdam! Rerum eos vero, recusandae, officiis, nihil voluptate perspiciatis eum obcaecati mollitia in cupiditate, rem consequuntur cum fugit.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quo sint tempora, tempore saepe eligendi cumque quasi architecto tenetur necessitatibus id optio odio, magnam unde laboriosam modi recusandae repellendus culpa.</p>
+           </section>
+   
+   
+           <footer>
+   
+           </footer>
+       </div> -->
 
     <script src="scripts.js"></script>
 
